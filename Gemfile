@@ -1,7 +1,7 @@
-source 'https://ruby.taobao.org'
+source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.6'
+gem 'rails', '4.2.0'
 
 # gem 'pg'
 gem 'mysql2'
@@ -47,34 +47,33 @@ gem 'unicorn'
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
-gem 'debugger', group: [:development, :test]
+gem 'byebug', group: [:development, :test]
 
 gem 'rabel-meta', '1.5', group: :production
 gem 'rspec-rails', '~> 2.99', group: [:development, :test]
 
 group :test do
-  gem 'shoulda-matchers', '~> 2.6.1'
-  gem 'factory_girl_rails', '~> 4.4.1'
+  gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
-  gem 'capybara', '~> 2.4.1'
-  gem 'selenium-webdriver', '~> 2.37.0'
+  gem 'capybara'
+  gem 'selenium-webdriver'
 end
 
 group :development do
-  gem 'quiet_assets', '~> 1.0.1'
+  gem 'quiet_assets'
   gem 'awesome_print'
-  gem 'better_errors'
-  gem 'binding_of_caller'
-  gem 'thin', '~> 1.6.2'
+  gem 'thin'
 end
 
 gem 'haml'
-gem 'devise', '~> 3.2.4'
+gem 'devise'
 gem 'cancancan', '~> 1.8.4'
 gem 'kaminari', '~> 0.16.1'
 gem 'carrierwave', '~> 0.10.0'
 gem 'carrierwave-upyun', '~> 0.1.8'
+gem 'carrierwave-qiniu'
 gem 'rmagick', '~> 2.13.2', require: false
 gem 'mime-types'
 gem 'redcarpet'
@@ -84,9 +83,9 @@ gem 'dalli'
 gem 'acts_as_list'
 gem 'rails-settings-cached', '0.4.1'
 gem 'facebox-rails', '~> 0.2.0'
-gem 'default_value_for', '~> 3.0.0.1'
+gem 'default_value_for'
 gem 'bootstrap-sass', '~> 3.1.1'
-gem 'slim-rails', '~> 2.1.5'
-gem 'simple_form', '~> 3.0.2'
+gem 'slim-rails'
+gem 'simple_form'
 gem 'figaro'
 
